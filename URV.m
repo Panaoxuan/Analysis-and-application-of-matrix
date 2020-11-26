@@ -1,0 +1,12 @@
+function [U,R,V] = URV(A)
+    [m,n] = size(A);
+    r = rank(A);
+    [Q1,B1] = Hh(A);
+    RA = Q1(:,1:r);
+    NA1 = Q1(:,r+1:m);
+    [Q2,B2] = Hh(A');
+    RA1 = Q2(:,1:r);
+    NA = Q2(:,r+1:n);
+    U = Q1;
+    V = Q2;
+    R = U' * A * V;
