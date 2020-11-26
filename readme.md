@@ -1,6 +1,16 @@
 # README
 
-## Table of Contents
+## Table of Content<!-- TOC -->
+<!-- TOC -->
+
+- [README](#readme)
+  - [Table of Content](#table-of-content)
+    - [Background](#background)
+    - [Usage](#usage)
+    - [Struct](#struct)
+    - [Result](#result)
+
+<!-- /TOC -->
 ### Background
     This is a trial of the algorithm implementation of five factorizations(LU, Gram Schmidt, Housholder, Givens and URV) after learning the analysis and application of matrix.
 ### Usage
@@ -26,7 +36,7 @@
         Schmidt.png：使用了练习中的例子，结果的正确性得到了验证；
         Hh.png与Givens.png：使用了练习中的例子，均得到了正确的结果；
         URV.png：使用了网上找到例子，验证了U，V为正交矩阵，同时R去除右下方的零三角阵后为一个非奇异矩阵，满足定义，因此完成了对结果的正确性验证。
-#### Result
+### Result
 PLU:
 
 ![result](./result/PLU.png)
